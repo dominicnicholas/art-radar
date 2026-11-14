@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Boston Openings Map</title>
+<meta name="description" content="Gallery shows opening around Boston in the coming weeks, on a map. Data from Boston Art Radar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<style>
+/* Layout: full-height split — map fills the left, a dated list of openings runs down the right; stacks map-over-list on phones. */
+:root {
+  --bg: #f5f6f8; --panel: #ffffff; --fg: #161a22; --muted: #5d6676; --line: #e1e4ea;
+  --accent: #2f45c8; --accent-soft: #e6e9fb; --soon: #d2452f; --later: #7b86a6;
+  --display: "Bricolage Grotesque", "Avenir Next", system-ui, sans-serif;
+  --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0f1218; --panel: #161a22; --fg: #e9ecf2; --muted: #98a1b3; --line: #262c38;
+    --accent: #8c9cff; --accent-soft: #232a4a; --soon: #ff7a5c; --later: #8590b0; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body { background: var(--bg); color: var(--fg); font: 14px/1.45 var(--body); display: grid; grid-template-rows: auto 1fr; }
+header { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px 24px;
+  padding-block: 18px 14px; padding-left: max(20px, env(safe-area-inset-left)); padding-right: max(20px, env(safe-area-inset-right));
+  border-bottom: 1px solid var(--line); background: var(--panel); }
+h1 { font: 700 clamp(22px, 3vw, 30px)/1.05 var(--display); letter-spacing: -0.01em; margin: 0; }
+.sub { color: var(--muted); margin: 4px 0 0; font-size: 13px; }
+.sub a { color: inherit; }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.chip { font: 500 13px var(--body); border: 1px solid var(--line); background: var(--panel); color: var(--fg);
+  padding: 6px 12px; border-radius: 999px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.chip:focus-visible, .item:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+main { display: grid; grid-template-columns: minmax(0, 1fr) 380px; min-height: 0; }
+#map { min-height: 0; background: var(--bg); }
+aside { overflow-y: auto; border-left: 1px solid var(--line); background: var(--panel);
+  padding-bottom: env(safe-area-inset-bottom); }
+.day { position: sticky; top: 0; z-index: 1; background: var(--panel); padding: 14px 20px 6px;
+  font: 600 11px var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted);
+  display: flex; justify-content: space-between; border-bottom: 1px solid var(--line); }
+.day .rel { color: var(--soon); }
+.item { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 12px; padding: 12px 20px; border-bottom: 1px solid var(--line);
+  cursor: pointer; background: none; border-left: 0; border-right: 0; border-top: 0; width: 100%; text-align: left; color: inherit; font: inherit; }
+.item:hover, .item.active { background: var(--accent-soft); }
+.thumb { width: 56px; height: 56px; border-radius: 6px; object-fit: cover; background: var(--line); }
+.t { font: 600 15px/1.25 var(--display); margin: 0 0 2px; text-wrap: balance; }
+.meta { color: var(--muted); font-size: 13px; }
+.empty { padding: 28px 20px; color: var(--muted); }
+footer.note { padding: 14px 20px 20px; color: var(--muted); font-size: 12px; }
+footer.note a { color: inherit; }
+/* map pins + popups */
+.pin { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; color: #fff;
+  font: 700 12px var(--body); border: 2px solid var(--panel); box-shadow: 0 1px 4px rgba(0,0,0,.35); }
+.pin.soon { background: var(--soon); } .pin.later { background: var(--later); } .pin.sel { outline: 3px solid var(--accent); }
+.leaflet-popup-content-wrapper, .leaflet-popup-tip { background: var(--panel); color: var(--fg); }
+.leaflet-popup-content { margin: 12px 14px; font: 13px/1.4 var(--body); max-width: 260px; }
+.pop h3 { font: 700 15px/1.2 var(--display); margin: 0 0 2px; }
+.pop .v { color: var(--muted); margin-bottom: 8px; }
+.pop .show + .show { border-top: 1px solid var(--line); margin-top: 8px; padding-top: 8px; }
+.pop .show b { display: block; font-weight: 600; }
+.pop a { color: var(--accent); }
+.leaflet-container { font-family: var(--body); }
+.leaflet-tile-pane { filter: var(--tiles); }
+:root { --tiles: saturate(.55) contrast(.95); }
+@media (prefers-color-scheme: dark) { :root { --tiles: invert(1) hue-rotate(180deg) brightness(.9) contrast(.85) saturate(.4); } }
+.leaflet-container a.leaflet-popup-close-button { color: var(--muted); }
+@media (max-width: 760px) {
+  main { grid-template-columns: 1fr; grid-template-rows: 52vh auto; }
+  body { height: auto; } html { height: auto; }
+  aside { border-left: 0; border-top: 1px solid var(--line); overflow: visible; }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>Opening Soon in Boston</h1>
+    <p class="sub" id="sub">Gallery shows opening in the coming weeks · from <a href="https://artradar.org/calendar" target="_blank" rel="noopener">Boston Art Radar</a></p>
+  </div>
+  <div class="chips" role="group" aria-label="How far ahead">
+    <button class="chip" id="r7" data-days="7">Next 7 days</button>
+    <button class="chip" id="r14" data-days="14">Next 2 weeks</button>
+    <button class="chip" id="r30" data-days="30">Next 30 days</button>
+  </div>
+</header>
+<main>
+  <div id="map" role="region" aria-label="Map of openings"></div>
+  <aside id="list" aria-label="Openings by date"></aside>
+</main>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+const dark = matchMedia('(prefers-color-scheme: dark)');
+const map = L.map('map', { zoomControl: true, scrollWheelZoom: true }).setView([42.36, -71.08], 12);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19,
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(map);
+
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const clean = s => (s || '').replace(/\*\*|__|[#>`]/g, '').trim();
+const d = iso => new Date(iso + 'T12:00:00');
+const fmtDay = iso => d(iso).toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+const fmtShort = iso => d(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+const todayISO = () => new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
+const daysFrom = iso => Math.round((d(iso) - d(todayISO())) / 864e5);
+const rel = n => n === 0 ? 'today' : n === 1 ? 'tomorrow' : `in ${n} days`;
+
+let data = { openings: [] }, range = 14, layer = L.layerGroup().addTo(map), markers = new Map();
+try { const r = Number(localStorage.getItem('range')); if ([7, 14, 30].includes(r)) range = r; } catch {}
+
+function render() {
+  document.querySelectorAll('.chip').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.days === range)));
+  const shows = data.openings.filter(o => daysFrom(o.opens) >= 0 && daysFrom(o.opens) <= range);
+  // one pin per venue
+  const venues = new Map();
+  for (const o of shows) if (o.lat != null) { const k = o.lat + ',' + o.lng; (venues.get(k) || venues.set(k, []).get(k)).push(o); }
+  layer.clearLayers(); markers.clear();
+  for (const [k, os] of venues) {
+    const first = os[0], soon = daysFrom(first.opens) <= 7;
+    const icon = L.divIcon({ className: '', iconSize: [30, 30], iconAnchor: [15, 15],
+      html: `<div class="pin ${soon ? 'soon' : 'later'}" title="${esc(first.venue)}">${d(first.opens).getDate()}</div>` });
+    const m = L.marker([first.lat, first.lng], { icon, keyboard: true, title: first.venue }).addTo(layer);
+    m.bindPopup(`<div class="pop"><h3>${esc(first.venue)}</h3><div class="v">${esc(first.neighborhood || '')}${first.address ? ' · ' + esc(first.address.replace(/, USA$/, '')) : ''}</div>` +
+      os.map(o => `<div class="show"><b>${esc(o.title)}</b>Opens ${esc(fmtDay(o.opens))} (${rel(daysFrom(o.opens))})${o.closes ? ', through ' + esc(fmtShort(o.closes)) : ''}<br>${o.blurb ? esc(clean(o.blurb)) + '<br>' : ''}<a href="${esc(o.url)}" target="_blank" rel="noopener">Details on Art Radar</a> · <a href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(o.address || o.venue)}" target="_blank" rel="noopener">Directions</a></div>`).join('') + '</div>');
+    os.forEach(o => markers.set(o.id, m));
+  }
+  const pts = shows.filter(o => o.lat != null).map(o => [o.lat, o.lng]);
+  if (pts.length) map.fitBounds(pts, { padding: [40, 40], maxZoom: 14 });
+
+  const list = document.getElementById('list');
+  if (!shows.length) { list.innerHTML = `<p class="empty">No openings listed in the next ${range} days. Try a longer range.</p>`; return; }
+  const byDay = shows.reduce((acc, o) => ((acc[o.opens] ||= []).push(o), acc), {});
+  list.innerHTML = Object.entries(byDay).map(([day, os]) =>
+    `<div class="day"><span>${esc(fmtDay(day))}</span><span class="${daysFrom(day) <= 7 ? 'rel' : ''}">${rel(daysFrom(day))}</span></div>` +
+    os.map(o => `<button class="item" data-id="${esc(o.id)}">${o.image ? `<img class="thumb" src="${esc(o.image)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : '<span class="thumb"></span>'}
+      <span><p class="t">${esc(o.title)}</p><span class="meta">${esc(o.venue)}${o.neighborhood ? ' · ' + esc(o.neighborhood) : ''}${o.closes ? '<br>Through ' + esc(fmtShort(o.closes)) : ''}</span></span></button>`).join('')
+  ).join('') + `<footer class="note">Updated ${esc(new Date(data.updated).toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' }))}. Listings come from <a href="https://artradar.org/calendar" target="_blank" rel="noopener">artradar.org</a>; check there before you go.</footer>`;
+  list.querySelectorAll('.item').forEach(b => b.addEventListener('click', () => {
+    const m = markers.get(b.dataset.id); if (!m) return;
+    list.querySelectorAll('.item.active').forEach(x => x.classList.remove('active')); b.classList.add('active');
+    map.setView(m.getLatLng(), Math.max(map.getZoom(), 14)); m.openPopup();
+    if (matchMedia('(max-width: 760px)').matches) document.getElementById('map').scrollIntoView({ behavior: 'smooth' });
+  }));
+}
+document.querySelectorAll('.chip').forEach(b => b.addEventListener('click', () => {
+  range = +b.dataset.days; try { localStorage.setItem('range', range); } catch {} render();
+}));
+fetch('data/openings.json', { cache: 'no-cache' }).then(r => r.json()).then(j => { data = j; render(); })
+  .catch(() => { document.getElementById('list').innerHTML = '<p class="empty">Couldn’t load the openings list. Refresh to try again.</p>'; });
+</script>
+</body>
+</html>
