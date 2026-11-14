@@ -1,38 +1,8 @@
 {
- "updated": "2026-11-14T00:03:40.992Z",
- "today": "2026-11-13",
- "through": "2026-12-13",
+ "updated": "2026-11-14T22:47:45.980Z",
+ "today": "2026-11-14",
+ "through": "2026-12-14",
  "openings": [
-  {
-   "id": "holiday-smalls-2",
-   "title": "Holiday “Smalls”",
-   "opens": "2026-11-14",
-   "closes": "2026-12-19",
-   "venue": "Gallery NAGA",
-   "neighborhood": "Back Bay",
-   "blurb": "Opening Reception: Saturday, November 14, from 1–3 pm",
-   "image": "https://barmap.wpenginepowered.com/wp-content/uploads/2026/08/Bringaleaftome.jpg",
-   "address": "67 Newbury Street, Boston, MA 02116, USA",
-   "lat": 42.3522371,
-   "lng": -71.0739198,
-   "url": "https://artradar.org/exhibition/holiday-smalls-2",
-   "venueUrl": "https://www.gallerynaga.com/"
-  },
-  {
-   "id": "joseph-mcnamara-matters-of-fact",
-   "title": "Joseph McNamara: Matters of Fact",
-   "opens": "2026-11-14",
-   "closes": "2026-12-19",
-   "venue": "Gallery NAGA",
-   "neighborhood": "Back Bay",
-   "blurb": "Opening Reception: Saturday, November 14, from 1–3 pm",
-   "image": "https://barmap.wpenginepowered.com/wp-content/uploads/2026/08/CAT-G-copy.jpeg",
-   "address": "67 Newbury Street, Boston, MA 02116, USA",
-   "lat": 42.3522371,
-   "lng": -71.0739198,
-   "url": "https://artradar.org/exhibition/joseph-mcnamara-matters-of-fact",
-   "venueUrl": "https://www.gallerynaga.com/"
-  },
   {
    "id": "angelz-ancestorz-alienz-and-spirit-guidez",
    "title": "Angelz, Ancestorz, Alienz, and Spirit Guidez",
