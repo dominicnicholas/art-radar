@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-15T22:45:12.314Z",
- "today": "2026-11-15",
- "through": "2026-12-15",
+ "updated": "2026-11-16T22:45:12.004Z",
+ "today": "2026-11-16",
+ "through": "2026-12-16",
  "openings": [
   {
    "id": "angelz-ancestorz-alienz-and-spirit-guidez",
@@ -317,6 +317,36 @@
    "lng": -71.06315140000001,
    "url": "https://artradar.org/exhibition/curatorial-practices-exhibition-2026",
    "venueUrl": "https://sowa.massart.edu"
+  },
+  {
+   "id": "delight-is-necessity",
+   "title": "Delight is Necessity",
+   "opens": "2026-12-16",
+   "closes": "2027-02-20",
+   "venue": "Mother Brook Arts & Community Center",
+   "neighborhood": "Hyde Park",
+   "blurb": null,
+   "image": "https://barmap.wpenginepowered.com/wp-content/uploads/2026/10/IMG_7804-1-rotated.jpg",
+   "address": "Mother Brook Arts and Community Center, High Street, Dedham, MA, USA",
+   "lat": 42.2483362,
+   "lng": -71.1571319,
+   "url": "https://artradar.org/exhibition/delight-is-necessity",
+   "venueUrl": "https://www.motherbrook.org/"
+  },
+  {
+   "id": "touching-memories",
+   "title": "Touching Memories",
+   "opens": "2026-12-16",
+   "closes": "2027-02-20",
+   "venue": "Mother Brook Arts & Community Center",
+   "neighborhood": "Hyde Park",
+   "blurb": null,
+   "image": "https://barmap.wpenginepowered.com/wp-content/uploads/2026/10/Andrews_Cynthia_Path-to-Nauset-Light_oil_36x36in.jpg",
+   "address": "Mother Brook Arts and Community Center, High Street, Dedham, MA, USA",
+   "lat": 42.2483362,
+   "lng": -71.1571319,
+   "url": "https://artradar.org/exhibition/touching-memories",
+   "venueUrl": "https://www.motherbrook.org/"
   }
  ]
 }
