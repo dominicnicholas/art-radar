@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-16T22:45:12.004Z",
- "today": "2026-11-16",
- "through": "2026-12-16",
+ "updated": "2026-11-17T22:45:06.558Z",
+ "today": "2026-11-17",
+ "through": "2026-12-17",
  "openings": [
   {
    "id": "angelz-ancestorz-alienz-and-spirit-guidez",
@@ -215,9 +215,9 @@
   },
   {
    "id": "first-night-50th-anniversary-retrospective",
-   "title": "First Night 50th Anniversary Retrospective",
+   "title": "50 Years of First Night: Ephemera",
    "opens": "2026-12-07",
-   "closes": "2026-12-31",
+   "closes": "2027-02-26",
    "venue": "Boston City Hall Galleries",
    "neighborhood": "Downtown",
    "blurb": "A selection of quilts and costumes made in the last 50 years of First Night",
@@ -347,6 +347,21 @@
    "lng": -71.1571319,
    "url": "https://artradar.org/exhibition/touching-memories",
    "venueUrl": "https://www.motherbrook.org/"
+  },
+  {
+   "id": "list-projects-36-will-stovall",
+   "title": "List Projects 36: Will Stovall",
+   "opens": "2026-12-17",
+   "closes": "2027-04-11",
+   "venue": "MIT List Visual Arts Center",
+   "neighborhood": "Cambridge",
+   "blurb": null,
+   "image": "https://barmap.wpenginepowered.com/wp-content/uploads/2026/10/MAIN_-Will-Stovall_LP36-scaled.jpg",
+   "address": "20 Ames Street, Cambridge, MA, USA",
+   "lat": 42.3610052,
+   "lng": -71.0878262,
+   "url": "https://artradar.org/exhibition/list-projects-36-will-stovall",
+   "venueUrl": "https://listart.mit.edu/"
   }
  ]
 }
