@@ -1,38 +1,8 @@
 {
- "updated": "2026-11-19T22:46:08.534Z",
- "today": "2026-11-19",
- "through": "2026-12-19",
+ "updated": "2026-11-20T22:45:07.980Z",
+ "today": "2026-11-20",
+ "through": "2026-12-20",
  "openings": [
-  {
-   "id": "angelz-ancestorz-alienz-and-spirit-guidez",
-   "title": "Angelz, Ancestorz, Alienz, and Spirit Guidez",
-   "opens": "2026-11-20",
-   "closes": "2026-12-06",
-   "venue": "Piano Craft Gallery",
-   "neighborhood": "South End",
-   "blurb": "Solo exhibition by our Artz Over Anxiety Partner",
-   "image": "https://barmap.wpenginepowered.com/wp-content/uploads/2026/08/unnamed.png",
-   "address": "Piano Craft Gallery, Tremont Street, Boston, MA, USA",
-   "lat": 42.3387106,
-   "lng": -71.0820568,
-   "url": "https://artradar.org/exhibition/angelz-ancestorz-alienz-and-spirit-guidez",
-   "venueUrl": "https://pianocraftgallery.com/"
-  },
-  {
-   "id": "mijung-yun-gestural-healing-rupture-and-repair",
-   "title": "MiJung Yun: Gestural Healing, Rupture and Repair",
-   "opens": "2026-11-20",
-   "closes": "2026-12-13",
-   "venue": "Project Hustle",
-   "neighborhood": "South End",
-   "blurb": "A solo show of drawings by MiJung Yun.",
-   "image": "https://barmap.wpenginepowered.com/wp-content/uploads/2026/10/MiJungYun_Volcano-No.1-scaled.jpg",
-   "address": "59 Wareham Street, Boston, MA, USA",
-   "lat": 42.3392068,
-   "lng": -71.0677443,
-   "url": "https://artradar.org/exhibition/mijung-yun-gestural-healing-rupture-and-repair",
-   "venueUrl": "https://projecthustleboston.org/"
-  },
   {
    "id": "plenty-2026",
    "title": "Plenty 2026",
