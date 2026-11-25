@@ -1,0 +1,17 @@
+{
+ "355 Main Street, Wellfleet": {
+  "lat": 41.938897,
+  "lng": -70.0329285,
+  "via": "osm"
+ },
+ "189 Alden Street, Duxbury": {
+  "lat": 42.0439846,
+  "lng": -70.6872684,
+  "via": "osm"
+ },
+ "94 Green Street, Boston": {
+  "lat": 42.3114183,
+  "lng": -71.1089062,
+  "via": "osm"
+ }
+}

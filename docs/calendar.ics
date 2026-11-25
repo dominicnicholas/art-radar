@@ -1,0 +1,489 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//boston-art-map//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Boston art: openings & events
+X-WR-TIMEZONE:America/New_York
+X-WR-CALDESC:Openings from Boston Art Radar and events from Boston Art Revi
+ ew’s Weekly Happenings
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:opening-friends-family-small-works-show@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+TRANSP:TRANSPARENT
+SUMMARY:Opens: Friends & Family Small Works Show (The Gallery at Jameson & 
+ Thompson)
+LOCATION:Jameson & Thompson Picture Framers\, Bartlett Square\, Jamaica Pla
+ in\, MA
+DESCRIPTION:A collection of small works\nOn view through 2027-01-01\nhttps:
+ //artradar.org/exhibition/friends-family-small-works-show
+URL:https://artradar.org/exhibition/friends-family-small-works-show
+CATEGORIES:Opening
+END:VEVENT
+BEGIN:VEVENT
+UID:opening-open-juried-photography-exhibit@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+TRANSP:TRANSPARENT
+SUMMARY:Opens: Everything Earthly and Delightful (Cambridge Art Association
+ )
+LOCATION:Cambridge Art Association\, Lowell Street\, Cambridge\, MA
+DESCRIPTION:Presented at the **CAA @ Canal Gallery** (650 E Kendall St.\, C
+ ambridge)\nOn view through 2027-01-08\nhttps://artradar.org/exhibition/ope
+ n-juried-photography-exhibit
+URL:https://artradar.org/exhibition/open-juried-photography-exhibit
+CATEGORIES:Opening
+END:VEVENT
+BEGIN:VEVENT
+UID:opening-a-clutter-of-roses@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+TRANSP:TRANSPARENT
+SUMMARY:Opens: A Clutter of Roses (Kingston Gallery)
+LOCATION:450 Harrison Avenue suite 43\, Boston\, MA 02118
+DESCRIPTION:On view through 2026-12-27\nhttps://artradar.org/exhibition/a-c
+ lutter-of-roses
+URL:https://artradar.org/exhibition/a-clutter-of-roses
+CATEGORIES:Opening
+END:VEVENT
+BEGIN:VEVENT
+UID:opening-mirror-mirror@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+TRANSP:TRANSPARENT
+SUMMARY:Opens: Mirror\, Mirror (Kingston Gallery)
+LOCATION:450 Harrison Avenue suite 43\, Boston\, MA 02118
+DESCRIPTION:On view through 2026-12-27\nhttps://artradar.org/exhibition/mir
+ ror-mirror
+URL:https://artradar.org/exhibition/mirror-mirror
+CATEGORIES:Opening
+END:VEVENT
+BEGIN:VEVENT
+UID:opening-solo-exhibition-oscar-morel@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+TRANSP:TRANSPARENT
+SUMMARY:Opens: Solo Exhibition: Oscar Morel (LaMontagne Gallery)
+LOCATION:450 Harrison Avenue #1\, Boston\, MA 02118
+DESCRIPTION:Solo exhibition by Oscar Morel.\nOn view through 2027-01-16\nht
+ tps://artradar.org/exhibition/solo-exhibition-oscar-morel
+URL:https://artradar.org/exhibition/solo-exhibition-oscar-morel
+CATEGORIES:Opening
+END:VEVENT
+BEGIN:VEVENT
+UID:opening-100-and-under-holiday-exhibition@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+TRANSP:TRANSPARENT
+SUMMARY:Opens: 100 and Under: Holiday Exhibition (Gateway Arts)
+LOCATION:Gateway Arts - Studio Art Center\, Gallery\, and Store\, Station S
+ treet\, Brookline\, MA
+DESCRIPTION:All works in this buy-off-the-wall exhibition are priced at $10
+ 0 or less.\nOn view through 2026-12-31\nhttps://artradar.org/exhibition/10
+ 0-and-under-holiday-exhibition
+URL:https://artradar.org/exhibition/100-and-under-holiday-exhibition
+CATEGORIES:Opening
+END:VEVENT
+BEGIN:VEVENT
+UID:opening-maintenance-manifesto-mending-the-space@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+TRANSP:TRANSPARENT
+SUMMARY:Opens: maintenance manifesto: mending the space (Behind VA Shadows 
+ Gallery)
+LOCATION:Behind VA Shadows Gallery\, Linden Street\, Cambridge\, MA
+DESCRIPTION:On view through 2027-01-23\nhttps://artradar.org/exhibition/mai
+ ntenance-manifesto-mending-the-space
+URL:https://artradar.org/exhibition/maintenance-manifesto-mending-the-space
+CATEGORIES:Opening
+END:VEVENT
+BEGIN:VEVENT
+UID:opening-2026-emerging-artists-exhibition@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+TRANSP:TRANSPARENT
+SUMMARY:Opens: 2026 Emerging Artists Exhibition (Boston City Hall Galleries
+ )
+LOCATION:1 City Hall Square\, Boston\, MA
+DESCRIPTION:Juried group show of emerging artists.\nOn view through 2027-02
+ -26\nhttps://artradar.org/exhibition/2026-emerging-artists-exhibition
+URL:https://artradar.org/exhibition/2026-emerging-artists-exhibition
+CATEGORIES:Opening
+END:VEVENT
+BEGIN:VEVENT
+UID:opening-first-night-50th-anniversary-retrospective@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+TRANSP:TRANSPARENT
+SUMMARY:Opens: 50 Years of First Night: Ephemera (Boston City Hall Gallerie
+ s)
+LOCATION:1 City Hall Square\, Boston\, MA
+DESCRIPTION:A selection of quilts and costumes made in the last 50 years of
+  First Night\nOn view through 2027-02-26\nhttps://artradar.org/exhibition/
+ first-night-50th-anniversary-retrospective
+URL:https://artradar.org/exhibition/first-night-50th-anniversary-retrospect
+ ive
+CATEGORIES:Opening
+END:VEVENT
+BEGIN:VEVENT
+UID:opening-haitian-artists-assembly-of-massachusetts@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+TRANSP:TRANSPARENT
+SUMMARY:Opens: Haitian Artists Assembly of Massachusetts (Boston City Hall 
+ Galleries)
+LOCATION:1 City Hall Square\, Boston\, MA
+DESCRIPTION:Group exhibition celebrating Haitian culture.\nOn view through 
+ 2027-02-26\nhttps://artradar.org/exhibition/haitian-artists-assembly-of-ma
+ ssachusetts
+URL:https://artradar.org/exhibition/haitian-artists-assembly-of-massachuset
+ ts
+CATEGORIES:Opening
+END:VEVENT
+BEGIN:VEVENT
+UID:opening-leg-room@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+TRANSP:TRANSPARENT
+SUMMARY:Opens: Maria Cazzato: Leg Room (Boston City Hall Galleries)
+LOCATION:1 City Hall Square\, Boston\, MA
+DESCRIPTION:Monumental paintings of fat legs recast as columns question the
+  female nude\nOn view through 2027-02-26\nhttps://artradar.org/exhibition/
+ leg-room
+URL:https://artradar.org/exhibition/leg-room
+CATEGORIES:Opening
+END:VEVENT
+BEGIN:VEVENT
+UID:opening-debra-fleury-human@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+TRANSP:TRANSPARENT
+SUMMARY:Opens: Debra Fleury: Human (Boston Sculptors Gallery)
+LOCATION:486 Harrison Avenue\, Boston\, MA
+DESCRIPTION:Exploring human difference\, similarity\, and energy through ab
+ straction.\nOn view through 2027-01-24\nhttps://artradar.org/exhibition/de
+ bra-fleury-human
+URL:https://artradar.org/exhibition/debra-fleury-human
+CATEGORIES:Opening
+END:VEVENT
+BEGIN:VEVENT
+UID:opening-glancing-back-fifty-years-murray-dewart@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+TRANSP:TRANSPARENT
+SUMMARY:Opens: Glancing Back Fifty Years: Murray Dewart (Boston Sculptors G
+ allery)
+LOCATION:486 Harrison Avenue\, Boston\, MA
+DESCRIPTION:50 years of works in wood\, bronze\, steel and aluminum.\nOn vi
+ ew through 2027-01-24\nhttps://artradar.org/exhibition/glancing-back-fifty
+ -years-murray-dewart
+URL:https://artradar.org/exhibition/glancing-back-fifty-years-murray-dewart
+CATEGORIES:Opening
+END:VEVENT
+BEGIN:VEVENT
+UID:opening-good-deal@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+TRANSP:TRANSPARENT
+SUMMARY:Opens: Good Deal (Distillery Gallery)
+LOCATION:516 E 2nd St\, Boston\, MA 02127
+DESCRIPTION:A group exhibition organized by local artist collective\, Copen
+ ger.\nOn view through 2027-01-31\nhttps://artradar.org/exhibition/good-dea
+ l
+URL:https://artradar.org/exhibition/good-deal
+CATEGORIES:Opening
+END:VEVENT
+BEGIN:VEVENT
+UID:opening-curatorial-practices-exhibition-2026@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+TRANSP:TRANSPARENT
+SUMMARY:Opens: CURATORIAL PRACTICES EXHIBITION 2026 (MassArt x SoWa Gallery
+ )
+LOCATION:460 Harrison Avenue\, Boston\, MA
+DESCRIPTION:On view through 2027-02-07\nhttps://artradar.org/exhibition/cur
+ atorial-practices-exhibition-2026
+URL:https://artradar.org/exhibition/curatorial-practices-exhibition-2026
+CATEGORIES:Opening
+END:VEVENT
+BEGIN:VEVENT
+UID:opening-delight-is-necessity@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+TRANSP:TRANSPARENT
+SUMMARY:Opens: Delight is Necessity (Mother Brook Arts & Community Center)
+LOCATION:Mother Brook Arts and Community Center\, High Street\, Dedham\, MA
+DESCRIPTION:On view through 2027-02-20\nhttps://artradar.org/exhibition/del
+ ight-is-necessity
+URL:https://artradar.org/exhibition/delight-is-necessity
+CATEGORIES:Opening
+END:VEVENT
+BEGIN:VEVENT
+UID:opening-touching-memories@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+TRANSP:TRANSPARENT
+SUMMARY:Opens: Touching Memories (Mother Brook Arts & Community Center)
+LOCATION:Mother Brook Arts and Community Center\, High Street\, Dedham\, MA
+DESCRIPTION:On view through 2027-02-20\nhttps://artradar.org/exhibition/tou
+ ching-memories
+URL:https://artradar.org/exhibition/touching-memories
+CATEGORIES:Opening
+END:VEVENT
+BEGIN:VEVENT
+UID:opening-list-projects-36-will-stovall@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+TRANSP:TRANSPARENT
+SUMMARY:Opens: List Projects 36: Will Stovall (MIT List Visual Arts Center)
+LOCATION:20 Ames Street\, Cambridge\, MA
+DESCRIPTION:On view through 2027-04-11\nhttps://artradar.org/exhibition/lis
+ t-projects-36-will-stovall
+URL:https://artradar.org/exhibition/list-projects-36-will-stovall
+CATEGORIES:Opening
+END:VEVENT
+BEGIN:VEVENT
+UID:bar-2026-11-24-hi-haleb-archiving-armenian-aleppo@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART:20261125T000000Z
+DTEND:20261125T013000Z
+SUMMARY:Conversation: Hi Haleb—Archiving Armenian Aleppo
+LOCATION:600 Pleasant St.\, Watertown
+DESCRIPTION:In this iteration of Conversations on Photography\, Houry Pilib
+ bossian discusses preserving the history and memories of Armenian Aleppo.\
+ nPresented by Project Save Photograph Archive\nhttps://www.eventbrite.com/
+ e/hi-haleb-archiving-armenian-aleppo-tickets-2004962829796?utm_content=att
+ endeeshare&utm_term=es1-listing-t&aff=ebdsshcopyurl\nFrom Boston Art Revie
+ w’s Weekly Happenings
+URL:https://www.eventbrite.com/e/hi-haleb-archiving-armenian-aleppo-tickets
+ -2004962829796?utm_content=attendeeshare&utm_term=es1-listing-t&aff=ebdssh
+ copyurl
+CATEGORIES:Conversation
+END:VEVENT
+BEGIN:VEVENT
+UID:bar-2026-11-29-print-fair@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART:20261129T160000Z
+DTEND:20261129T220000Z
+SUMMARY:Fair: Print Fair
+LOCATION:355 Main St.\, Wellfleet
+DESCRIPTION:Celebrating works on paper from the Print Room\nPresented by fa
+ rm projects\nhttps://www.instagram.com/p/DgICuD5hIh8/\nFrom Boston Art Rev
+ iew’s Weekly Happenings
+URL:https://www.instagram.com/p/DgICuD5hIh8/
+CATEGORIES:Fair
+END:VEVENT
+BEGIN:VEVENT
+UID:bar-2026-11-29-holly-days-at-acm@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART:20261129T180000Z
+DTEND:20261129T200000Z
+SUMMARY:Event: Holly Days at ACM
+LOCATION:189 Alden St.\, Duxbury
+DESCRIPTION:A concert by New England Conservatory\, printmaking in the stud
+ io\, and more\nPresented by Art Complex Museum\nhttps://www.eventbrite.com
+ /e/holly-days-at-acm-tickets-2003354755001?aff=ebdsoporgprofile\nFrom Bost
+ on Art Review’s Weekly Happenings
+URL:https://www.eventbrite.com/e/holly-days-at-acm-tickets-2003354755001?af
+ f=ebdsoporgprofile
+CATEGORIES:Event
+END:VEVENT
+BEGIN:VEVENT
+UID:bar-2026-12-01-surge@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART:20261201T230000Z
+DTEND:20261202T003000Z
+SUMMARY:Performance-Workshop: Surge
+LOCATION:314 Main St.\, Cambridge
+DESCRIPTION:A participatory performance on sea level rise\, led by choreogr
+ apher Jessie Jeanne Stinnett and Boston Dance Theater\nPresented by MIT Mu
+ seum\nhttps://mitmuseum.mit.edu/programs/surge-a-participatory-performance
+ -on-sea-level-rise\nFrom Boston Art Review’s Weekly Happenings
+URL:https://mitmuseum.mit.edu/programs/surge-a-participatory-performance-on
+ -sea-level-rise
+CATEGORIES:Performance-Workshop
+END:VEVENT
+BEGIN:VEVENT
+UID:bar-2026-12-01-queer-liberation-in-practice@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART:20261201T230000Z
+DTEND:20261202T003000Z
+SUMMARY:Conversation: Queer Liberation in Practice
+LOCATION:Online
+DESCRIPTION:Join The People’s Coalition for Part II: After Stonewall\, a 
+ free virtual session examining the roots of queer resistance.\nPresented b
+ y Queer History Boston and the Queer Neighborhood Council\nhttps://www.ins
+ tagram.com/p/DgIfNqXJfNL/?img_index=1\nFrom Boston Art Review’s Weekly H
+ appenings
+URL:https://www.instagram.com/p/DgIfNqXJfNL/?img_index=1
+CATEGORIES:Conversation
+END:VEVENT
+BEGIN:VEVENT
+UID:bar-2026-12-01-impenetrable-landscapes@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART:20261201T230000Z
+DTEND:20261202T010000Z
+SUMMARY:Performance + Screening: Impenetrable Landscapes
+LOCATION:Mills Gallery\, 551 Tremont St.
+DESCRIPTION:A dance performance by Jenny Oliver\, presented in dialogue wit
+ h Alice Miceli’s exhibition "Impenetrable Landscapes." Followed by a scr
+ eening of a pre-recorded artist talk with Miceli and curator Michael Orwic
+ z.\nPresented by Boston Center for the Arts\nhttps://www.instagram.com/p/D
+ gIfNqXJfNL/?img_index=1\nFrom Boston Art Review’s Weekly Happenings
+URL:https://www.instagram.com/p/DgIfNqXJfNL/?img_index=1
+CATEGORIES:Performance + Screening
+END:VEVENT
+BEGIN:VEVENT
+UID:bar-2026-12-01-artistic-web-design@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART:20261201T233000Z
+DTEND:20261202T013000Z
+SUMMARY:Workshop: Artistic Web Design
+LOCATION:Cultural Equity Incubator\, 94 Green St.
+DESCRIPTION:Christina Balch will discuss media editing\, artist statements\
+ , website building\, and budgeting & budget tracking for artists.\nPresent
+ ed by Arts Action Consortium\nhttps://www.arts-action.com/workshops-events
+ /web-design\nFrom Boston Art Review’s Weekly Happenings
+URL:https://www.arts-action.com/workshops-events/web-design
+CATEGORIES:Workshop
+END:VEVENT
+BEGIN:VEVENT
+UID:bar-closes-list-projects-35-pap-souleye-fall@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+TRANSP:TRANSPARENT
+SUMMARY:Last day: List Projects 35: Pap Souleye Fall (MIT List Visual Arts 
+ Center)
+LOCATION:20 Ames St.\, Cambridge
+DESCRIPTION:https://listart.mit.edu/exhibitions/list-projects-35-pap-souley
+ e-fall
+URL:https://listart.mit.edu/exhibitions/list-projects-35-pap-souleye-fall
+CATEGORIES:Closing
+END:VEVENT
+BEGIN:VEVENT
+UID:bar-closes-waves-of-hidden-histories@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+TRANSP:TRANSPARENT
+SUMMARY:Last day: Waves of Hidden Histories (Gallery 360 at Northeastern Un
+ iversity)
+LOCATION:360 Huntington Ave.\, Boston
+DESCRIPTION:Featuring works by Lani Asunción and Joanna Tam\nhttps://camd.
+ northeastern.edu/featured-work/waves-of-hidden-histories-隱藏歷史的
+ 浪潮/
+URL:https://camd.northeastern.edu/featured-work/waves-of-hidden-histories-
+ 隱藏歷史的浪潮/
+CATEGORIES:Closing
+END:VEVENT
+BEGIN:VEVENT
+UID:bar-call-request-for-proposals-2027-dewey-square-activation@boston-art-
+ map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+TRANSP:TRANSPARENT
+SUMMARY:Deadline: Request for Proposals: 2027 Dewey Square Activation
+DESCRIPTION:The Greenway Conservancy seeks an entrepreneurial partner to en
+ vision\, design\, build\, install\, manage\, and operate a vibrant outdoor
+  activation in Dewey Square Park. The activation may take the form of an o
+ utdoor concession\, bar\, kiosk\, café\, retail pop-up shop\, market\, ac
+ tivity\, event or performance series\, or other innovative concept that br
+ ings people together and enhances the experience of the plaza and surround
+ ing district.\nhttps://www.rosekennedygreenway.org/wp-content/uploads/2026
+ /10/2027-Dewey-Square-RFP-FINAL.pdf
+URL:https://www.rosekennedygreenway.org/wp-content/uploads/2026/10/2027-Dew
+ ey-Square-RFP-FINAL.pdf
+CATEGORIES:Open call
+END:VEVENT
+BEGIN:VEVENT
+UID:bar-call-open-call-public-art-for-spatial-justice@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+TRANSP:TRANSPARENT
+SUMMARY:Deadline: Open Call: Public Art for Spatial Justice
+DESCRIPTION:NEFA's Public Art for Spatial Justice grants range from $15\,00
+ 0 to $30\,000 for up to a two-year grant period\, starting March 2027. Pro
+ jects must take place in Massachusetts and creatively cultivate expression
+ s or embodiments of spatial justice through public art-making. All artisti
+ c disciplines are welcome to apply.\nhttps://www.nefa.org/CreateSpatialJus
+ tice
+URL:https://www.nefa.org/CreateSpatialJustice
+CATEGORIES:Open call
+END:VEVENT
+BEGIN:VEVENT
+UID:bar-call-call-for-art-between-here-there@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+TRANSP:TRANSPARENT
+SUMMARY:Deadline: Call for Art: Between Here & There
+DESCRIPTION:“Between Here and There” is a multimedia exhibit presented 
+ by the Arlington Center for the Arts and Lexington Arts and Crafts Society
+ . It brings these two artistic communities together with work from both yo
+ uth and adults residing in both Arlington and Lexington as well as the Gre
+ ater New England area.\nhttps://drive.google.com/file/d/1-pP7XaG_XTi3wP3IO
+ Tl2NBszXtLRFehD/view
+URL:https://drive.google.com/file/d/1-pP7XaG_XTi3wP3IOTl2NBszXtLRFehD/view
+CATEGORIES:Open call
+END:VEVENT
+BEGIN:VEVENT
+UID:bar-call-open-call-triennial-s-public-art-accelerator@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+TRANSP:TRANSPARENT
+SUMMARY:Deadline: Open Call: Triennial's Public Art Accelerator
+DESCRIPTION:The Triennial’s Public Art Accelerator returns with an open c
+ all for three experienced Greater Boston–based artists to be part of Coh
+ ort Ten of the Accelerator and the next Triennial in 2028. Workshops will 
+ run from March 2027 through June 2027 and will culminate in the inclusion 
+ of artist-driven proposals within the Triennial 2028 exhibition\, set to o
+ pen May 2028.\nhttps://www.thetriennial.org/accelerator
+URL:https://www.thetriennial.org/accelerator
+CATEGORIES:Open call
+END:VEVENT
+BEGIN:VEVENT
+UID:bar-call-open-call-kin@boston-art-map
+DTSTAMP:20261125T000106Z
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+TRANSP:TRANSPARENT
+SUMMARY:Deadline: Open Call: KIN
+DESCRIPTION:This national exhibition\, presented by Gallery 263 and juried 
+ by Nadirah Mansour\, will examine the notion of kin beyond relationships o
+ f blood\, culture\, region\, or circumstance. It asks what it means to bec
+ ome kin with those beyond humanity\, how we understand them to be kin\, an
+ d what our responsibilities toward kin who cannot speak or articulate need
+ s is. Gallery 263 invites US-based artists of all experience levels to sub
+ mit work that engages these questions and the material relationships they 
+ are enmeshed in.\nhttps://gallery263.org/call/kin/?doing_wp_cron=179554038
+ 6.9282259941101074218750
+URL:https://gallery263.org/call/kin/?doing_wp_cron=1795540386.9282259941101
+ 074218750
+CATEGORIES:Open call
+END:VEVENT
+END:VCALENDAR

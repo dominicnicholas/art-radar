@@ -2,5 +2,6 @@
   "siteUrl": "https://dominicnicholas.github.io/art-radar/",
   "ntfyTopic": "",
   "windowDays": 30,
-  "weeklyRoundupDay": 0
+  "weeklyRoundupDay": 0,
+  "openCallReminderDays": 3
 }

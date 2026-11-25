@@ -1,5 +1,6 @@
 #!/bin/bash
-# Installs a daily launchd job that runs update.mjs at 5:45pm (Mac's local time).
+# Installs a launchd job that runs update.mjs daily at 5:45pm, plus Tuesdays at 8:15pm to catch
+# the new Weekly Happenings issue (sent Tuesday afternoons). Times are the Mac's local time.
 # Re-run any time to change the time:  ./install-mac.sh 18 30
 set -euo pipefail
 HOUR=${1:-17}; MIN=${2:-45}
@@ -19,12 +20,15 @@ cat > "$PLIST" <<PL
   <key>ProgramArguments</key><array><string>$NODE</string><string>$DIR/update.mjs</string></array>
   <key>WorkingDirectory</key><string>$DIR</string>
   <key>EnvironmentVariables</key><dict><key>PATH</key><string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string></dict>
-  <key>StartCalendarInterval</key><dict><key>Hour</key><integer>$HOUR</integer><key>Minute</key><integer>$MIN</integer></dict>
+  <key>StartCalendarInterval</key><array>
+    <dict><key>Hour</key><integer>$HOUR</integer><key>Minute</key><integer>$MIN</integer></dict>
+    <dict><key>Weekday</key><integer>2</integer><key>Hour</key><integer>20</integer><key>Minute</key><integer>15</integer></dict>
+  </array>
   <key>StandardOutPath</key><string>$DIR/logs/update.log</string>
   <key>StandardErrorPath</key><string>$DIR/logs/update.log</string>
 </dict></plist>
 PL
 launchctl bootout "gui/$(id -u)/$LABEL" 2>/dev/null || true
 launchctl bootstrap "gui/$(id -u)" "$PLIST"
-printf 'Installed: runs daily at %02d:%02d. Log: %s/logs/update.log\n' "$HOUR" "$MIN" "$DIR"
+printf 'Installed: runs daily at %02d:%02d and Tuesdays at 20:15. Log: %s/logs/update.log\n' "$HOUR" "$MIN" "$DIR"
 echo "Run it now with:  launchctl kickstart gui/$(id -u)/$LABEL"
